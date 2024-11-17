@@ -1,0 +1,46 @@
+{
+  "name": "@nxmad/medusa-telegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    },
+    "./tma-auth": {
+      "types": "./dist/modules/tma-auth/index.d.ts",
+      "require": "./dist/modules/tma-auth/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxmad/medusa-telegram"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "biome format --write ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "medusa-plugin",
+    "medusa-plugin-auth",
+    "medusa-plugin-other",
+    "medusa-plugin-notification"
+  ],
+  "author": "Alex Balatsky <contact@skylex.pro>",
+  "license": "MIT",
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "dependencies": {},
+  "peerDependencies": {
+    "@medusajs/framework": "^2.0.0",
+    "@medusajs/medusa": "^2.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tsconfig/node22": "^22.0.0",
+    "typescript": "^5.6.3"
+  }
+}
